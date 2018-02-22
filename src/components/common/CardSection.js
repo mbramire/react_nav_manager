@@ -3,8 +3,10 @@ import { View } from 'react-native';
 
 // Funtional component (for presentation)
 const CardSection = (props) => {
+  // style takes an array argument, and will used the
+  // last passed in object to overide what is previously set.
   return (
-    <View style={styles.containerStyle} >
+    <View style={[styles.containerStyle, props.style]} >
       {props.children}
     </View>
   );
@@ -20,6 +22,6 @@ const styles = {
     borderColor: '#ddd',
     position: 'relative'
   }
-}
+};
 
 export { CardSection };

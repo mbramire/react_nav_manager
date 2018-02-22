@@ -4,7 +4,6 @@ import { Text, TouchableOpacity } from 'react-native';
 // Funtional component
 const Button = ({ onPress, children }) => {
   const { buttonStyle, textStyle } = styles;
-  // props.children is required to render anything enclosed in the Card componenet
   return (
     <TouchableOpacity onPress={onPress} style={buttonStyle} >
       <Text style={textStyle}>
